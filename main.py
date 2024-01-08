@@ -86,8 +86,7 @@ root = "assets/minecraft"
 
 with open(f"{root}/models/item/{file_name}.json","w") as f:
     f.write(dumps(base))
-    
-with open(f"output.json","w") as f:
-    f.write(dumps(base))
 
 shutil.copyfile(image_path, f"{root}/textures/item/{file_name}.png")
+
+print("Converted texture to model. Generated an assets folder, that can be added to a resource pack.")
