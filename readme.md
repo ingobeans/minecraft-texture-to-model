@@ -24,7 +24,8 @@ CustomModelData is a way to create variations of texture for a single item. The 
 To do that you will need a second model file in the assets/minecraft/model/item folder, with the name of the base item (with the .json file extension).
 
 The following example is to make it so that an iron_sword with the CustomModelData of 1, will instead use custom/iron_longsword as model.
-```{
+```
+{
 	"parent": "item/handheld",
 	"textures": {
 		"layer0": "item/iron_sword"
@@ -32,6 +33,7 @@ The following example is to make it so that an iron_sword with the CustomModelDa
 	"overrides": [
 		{ "predicate": {  "custom_model_data": 1 }, "model": "item/custom/iron_longsword"}
 	]
-}```
+}
+```
 
 Do note, if the base item is not a sword, "parent" should be "generated".
