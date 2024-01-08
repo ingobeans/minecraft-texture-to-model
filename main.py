@@ -79,8 +79,8 @@ base["elements"] = elements
 
 if os.path.isdir("assets"):
 	shutil.rmtree("assets")
-os.makedirs("assets/minecraft/models/item/",exist_ok=True)
-os.makedirs("assets/minecraft/textures/item/",exist_ok=True)
+os.makedirs("assets/minecraft/models/item/"+file_name,exist_ok=True)
+os.makedirs("assets/minecraft/textures/item/"+file_name,exist_ok=True)
 
 root = "assets/minecraft"
 
