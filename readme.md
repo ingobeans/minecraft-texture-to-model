@@ -1,4 +1,4 @@
-##A Texture to Model converter for Minecraft
+## A Texture to Model converter for Minecraft
 *Note, only support for 32x32 textures\** 
 
 A tool to make items in your resource packs which are larger than usual (up to twice the size).
@@ -9,7 +9,7 @@ This converter won't do that, and the item will instead be twice the size ingame
 
 I made this for a datapack where I added longswords. To make the longswords, long, I used this tool.
 
-###Usage
+### Usage
 
 1. Install Python
 2. Install PIL with the following command: `pip install pillow`
@@ -18,7 +18,7 @@ I made this for a datapack where I added longswords. To make the longswords, lon
 5. Enter the model path, if you want to replace an ingame item, simply enter the item's name. 
 6. The converter generates an assets/ folder, that can be added to your resourcepack.
 
-###Advanced:
+### Advanced:
 If you don't want to replace an item, you can instead at Step 5 have the path be in a subdirectory, example: custom/iron_longsword.
 CustomModelData is a way to create variations of texture for a single item. The different variations can be spawned with commands.
 To do that you will need a second model file in the assets/minecraft/model/item folder, with the name of the base item (with the .json file extension).
